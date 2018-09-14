@@ -22,3 +22,7 @@ class zconfig:
         fullPath = self.getPath(path)
         self.client.ensure_path(fullPath)
         self.client.set(fullPath, value)
+
+    def get(self, path):
+        fullPath = self.getPath(path)
+        return self.client.get(fullPath)[0]

@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="weichigong",
-    version="0.0.1",
+    version="1.0.0",
     author="dashixiong lee",
     author_email="dashixiong@gmail.com",
     description="a centralized configuration library based on zookeeper",
