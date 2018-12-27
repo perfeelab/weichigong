@@ -4,7 +4,10 @@
 import os
 from kazoo.client import KazooClient
 
-name = "weichigong"
+__name__ = "weichigong"
+__version__ = '1.0.3'
+__author__ = 'dashixiong'
+__author_email__ = 'dashixiong.lee@gmail.com'
 
 
 class zconfig:
@@ -25,4 +28,4 @@ class zconfig:
 
     def get(self, path):
         fullPath = self.getPath(path)
-        return self.client.get(fullPath)[0]
+        return self.client.get(fullPath)[0].decode('utf-8')
